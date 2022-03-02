@@ -2,6 +2,9 @@ package edu.uci.swe264p.retrofit;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Movie class
+ */
 public class Movie {
     @SerializedName("vote_average")
     private Float voteAverage;
@@ -27,12 +30,10 @@ public class Movie {
     }
 
     public String getPosterPath() {
-        return posterPath;
+        return "https://image.tmdb.org/t/p/w500" + posterPath;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() { return title; }
 
     public String getReleaseDate() {
         return releaseDate;
